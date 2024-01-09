@@ -18,12 +18,17 @@ def test_get():
 def test_index_of():
     assert index_of([2, 7, 3, 2, 4], 2) == 0
     # BEGIN (write your solution here)
-
+    assert index_of([], 1) == -1
+    assert index_of([2, 7, 3, 2, 4], 2, -2) == 3
+    assert index_of([2, 7, 3, 2, 4], 2, -6) == 0
+    assert index_of([2, 7, 3, 2, 4], 5) == -1
     # END
 
 
 def test_slice():
     assert my_slice([1, 2, 3, 4, 5, 6], 1, 4) == [2, 3, 4]
     # BEGIN (write your solution here)
-
+    assert my_slice([], 1, 4) == []
+    assert my_slice([1, 2, 3, 4, 5, 6], -1) == [6]
+    assert my_slice([1, 2, 3, 4, 5, 6], -7) == [1, 2, 3, 4, 5, 6]
     # END

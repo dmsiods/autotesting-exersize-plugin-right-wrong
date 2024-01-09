@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from test_plugin import TestPlugin
+from tests.test_plugin import TestPlugin
 
 
 def run_tests():
@@ -13,7 +13,9 @@ def run_tests():
 
 def get_passed_tests_count():
     passed_tests = run_tests()
-    print(passed_tests)
+    with open('testfile.txt', 'a') as f:
+        f.write(str(passed_tests))
+    # print(passed_tests)
     return len(passed_tests)
 
 
