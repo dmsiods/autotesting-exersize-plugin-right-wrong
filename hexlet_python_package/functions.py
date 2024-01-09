@@ -1,9 +1,9 @@
 import os
 
-import right
-import wrong1
-import wrong2
-import wrong3
+import hexlet_python_package.right as right
+import hexlet_python_package.wrong1 as wrong1
+import hexlet_python_package.wrong2 as wrong2
+import hexlet_python_package.wrong3 as wrong3
 
 functions = {
     "right": {

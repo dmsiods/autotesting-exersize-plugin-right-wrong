@@ -13,7 +13,7 @@ build: check
 	poetry build
 
 test-coverage:
-	FUNCTION_VERSION=right pytest --cov-report term-missing --cov=src/right tests/test_solution.py
+	FUNCTION_VERSION=right pytest --cov-report term-missing --cov=hexlet_python_package/right tests/test_solution.py
 
 test:
 	FUNCTION_VERSION=right PASSED_TESTS=3 pytest tests/test_of_test.py
